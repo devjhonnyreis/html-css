@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    background-color: #FBCFD9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main:hover {
+    background-color: yellow;
+}
+main > p {
+    display: none;
+}
+main:hover > p {
+    display: block;
+    background-color: aqua;
+    width: 600px;
+    color: red
+    
+}
+main{
+    background-color: #fff1f4ea;
+    border-radius: 20px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 10px 10px 20px rgba(85, 76, 76, 0.562);
+
+}
+
+h1{
+    color: #8C5A5A;
+}
+h1#principal{
+    text-align: center;
+    color: #912B48;
+    border-radius: 20px;
+}
+
+h2{
+    color: #B55A69;
+}
+.basico:hover {
+display: none;
+}
+.intermediario:hover {
+    background-color: aliceblue;
+    text-decoration: underline;
+}

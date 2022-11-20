@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body
+        {background-color: aliceblue;}
+    </style>
+    <title>Varias Imagens</title>
+</head>
+<body>
+    <h1>Varias Imagens</h1>
+    <p>Criando um site com imagens variadas para diversos tipos de tela</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+    <h1>Incluindo audio</h1>
+    <p>nesta seção iremos incluir audio no site através da tag &lt;audio&gt;</p>
+    <audio preload="metadata" controls >
+        <source src="media/media.mp3" type="audio/mpeg">
+        <source src="media/media.ogg" type="audio/ogg">
+        <source src="media/media.wav" type="audio/wav">
+    </audio>
+    <p>se o seu navegador não reproduzir este audio, você poderá baixa-lo atraves do link: <br><a href="media/media.mp3">Download</a></p>
+    
+</body>
+</html>
