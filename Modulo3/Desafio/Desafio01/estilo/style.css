@@ -59,7 +59,7 @@ div.joaninha {
     background-position:right center;
     background-repeat: no-repeat;
     height: 70vw;
- 
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.425);
 }
 
 div.livros{
@@ -67,6 +67,7 @@ div.livros{
     background-attachment: fixed;
     background-size: cover;
     height: 70vw;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.425);
 }
 
 article {
@@ -83,6 +84,7 @@ div > p{
     margin-top: 80px;
     margin-left: 35px;
     padding: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
