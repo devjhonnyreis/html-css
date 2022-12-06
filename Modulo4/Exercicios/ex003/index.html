@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="10" placeholder="Primeiro Nome" autocomplete="name">
+        </p>
+        <p>
+            <label for="isobre">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobre" required minlength="4" maxlength="30" placeholder="Sobre Nome" autocomplete="additional-name">
+        </p>
+        <p>
+            <label for="inas">Data de Nascimento:</label>
+            <input type="date" name="nascimento" id="inas" required>
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="Telefone" id="itel" required placeholder="(00)00000-0000">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
