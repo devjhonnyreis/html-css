@@ -32,6 +32,21 @@
                 <label for="itel">Telefone</label>
                 <input type="tel" name="Telefone" id="itel" required placeholder="(00)00000-0000" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </p>
+            <p>
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" name="sexo" id="imas" value="M" checked><label for="imas">Masculino</label><br>
+                    <input type="radio" name="sexo" id="ifem" value="F" ><label for="ifem">Feminino</label>
+                </fieldset>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="jog" id="ijog"><label for="ijog">Video-Game</label><br>
+            <input type="checkbox" name="corr" id="icorr"><label for="icorr">Caminhar</label><br>
+            <input type="checkbox" name="mus" id="imus"><label for="imus">Musica</label><br>
+            <input type="checkbox" name="coz" id="icoz"><label for="icoz">Cozinhar</label><br>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
