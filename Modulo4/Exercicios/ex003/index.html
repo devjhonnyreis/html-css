@@ -25,9 +25,18 @@
                 <input type="text" name="sobrenome" id="isobre" required minlength="4" maxlength="30" placeholder="Sobre Nome" autocomplete="additional-name">
             </p>
             <p>
+                <label for="iano">Ano de Nascimento:</label>
+                <input type="number" name="ano" id="iano" min="1990" max="2022" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="iidd">Sua idade é:</label>
+                <output id="iidd">0</output>
+            </p>
+            <p>
                 <label for="inas">Data de Nascimento:</label>
                 <input type="date" name="nascimento" id="inas" required>
             </p>
+            
             <p>
                 <label for="itel">Telefone</label>
                 <input type="tel" name="Telefone" id="itel" required placeholder="(00)00000-0000" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
@@ -65,8 +74,6 @@
                     <option>Desenvolvedor</option>
                     <option>Professor</option>
                 </datalist>
-                
-            
             </p>
         </fieldset>
         <fieldset>
@@ -83,9 +90,27 @@
                 <label for="icor">Cor Favorita:</label>
                 <input type="color" name="cor" id="icor" value="#0000ff"><br>
             </p>
+            <fieldset>
+                <legend>Cash</legend>
+                <p>
+                    <label for="icash">Quantos royalcash gostaria de comprar?</label>
+                    <input type="number" name="cash" id="icash" min="0" max="25" oninput=" itotal.innerHTML = Number (icash.value) + Number (ivip.value)">
+                </p>
+                <p>
+                    <label for="ivip">Quantos Vipcash gostaria de comprar?</label>
+                    <input type="number" name="vip" id="ivip" min="0" max="25" oninput="itotal.innerHTML = Number (icash.value) + Number (ivip.value)">
+                </p>
+                <p>
+                    Total R$:
+                    <output name="total" id="itotal">0</output>
+                </p>
+            </fieldset>
+            
             <p>
                 <label for="iniv">Nível de Satisfação com a loja:</label>
-                <input type="range" name="niv" id="iniv" min="1" max="10" value="3"><br>   
+                <input type="range" name="niv" id="iniv" min="1" max="10" value="5" oninput="ival.innerHTML = Number (iniv.value)">
+                <output id="ival">5</output>
+                <br>   
             </p>
             <p>
                 <label for="ifil">Insira o comprovante de pagamento:</label>
@@ -102,6 +127,13 @@
         </p>
 
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidd.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
     
 </body>
 </html>
