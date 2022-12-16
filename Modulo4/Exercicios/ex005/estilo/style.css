@@ -47,6 +47,25 @@
         padding: 10px;
     }
 
+    #burguer{
+        display: block;
+        background-color: #1b1308;
+        color: var(--cor04);
+        padding: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #burguer:hover{
+        background-color: var(--cor05);
+        color: var(--cor01);
+        cursor: pointer;
+    }
+    
+    menu{
+        display: none;
+    }
+
     menu > ul> li> a:hover {
         background-color: var(--cor04);
         color: var(--cor01);
