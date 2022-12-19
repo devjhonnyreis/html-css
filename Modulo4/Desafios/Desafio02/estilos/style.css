@@ -33,4 +33,6 @@ div#foto {
     background-position: center center;
     max-width: 400px;
     height: 250px;
+    margin: -10px -10px 0px;
+    margin-right: 40px;
 }
