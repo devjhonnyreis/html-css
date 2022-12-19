@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01:#9125A3;
+    --cor02:#D536F0;
+    --cor03:#A75EB3;
+    --cor04:#EB84FC;
+    --cor05:#6F1C7D;
+}
+
+body{
+    background-color: var(--cor05);
+}
+
+section {
+    background-color: white;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+div#foto {
+    background-image: url(../imagens/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 400px;
+    height: 250px;
+}
