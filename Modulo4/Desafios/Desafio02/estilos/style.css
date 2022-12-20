@@ -25,17 +25,18 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-    transition: width .2s, height .2s;
-    transition-timing-function: ease;
-
+    
     background-color: white;
     width: 260px;
     height: 550px;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.562);
+
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 div#foto {
@@ -61,18 +62,27 @@ div > h1 {
 div > p {
     padding: 10px;
     text-align: left;
+    font-size: 0.8em;
 }
 
 .caixa{
     background-color: var(--cor05);
     margin: 5px;
+    width: calc(100% - 7px);
     border-radius: 10px;
     padding: 1px 0px 1px 10px;
 }
 
 .caixa2{
+    background-color: #f4aaffe7;
     border-radius: 10px;
     padding-top: 10px;
+    width: calc(100% - 33px);
+    transform: translateY(-3%);
+}
+
+.caixa2:focus-within {
+    background-color: white;
 }
 
 .material-icons {
@@ -82,14 +92,24 @@ div > p {
 .botao{
     color: var(--cor04);
     font-weight: bold; 
-    width: 250px;
+    width: calc(100% - 7px);
     padding: 7px;
     border-radius: 10px;
     border-color: var(--cor04);
-    margin: 0px 0px 5px 5px;      
+    margin: 0px 0px 5px 5px;
+    cursor: pointer;      
 }
 
 #ibot {
     background-color: var(--cor02);
     color: white;
+}
+
+#ibot:hover{
+    background-color: var(--cor05);
+}
+
+#ibot2:hover {
+    background-color: var(--cor04);
+    color: var(--cor05);
 }
