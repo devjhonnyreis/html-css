@@ -31,13 +31,12 @@
 
     ul {
         text-align: center;
-        background-color: var(--cor02);
         border-bottom: 2px solid var(--cor01);
     }
 
     li {
         border-top: 2px solid var(--cor01);
-        
+        background-color: var(--cor02);
     }
 
     a {
@@ -88,4 +87,21 @@
         text-indent: 20px;
         text-align: justify;
         margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: var(--cor01);
+        color: var(--cor05);
+        text-align: center;
+        font: 1em;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    a#icurs {
+        display: inline-block;
+        text-decoration: underline;
+        text-align: center;
+        color: var(--cor05);
+        padding: 0px;
     }
